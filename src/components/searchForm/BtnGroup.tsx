@@ -7,10 +7,10 @@ export default function BtnGroup({ onClickOpenSearchBox }: BtnGroupsProps) {
   return (
     <div className="items-center flex">
       <div
-        className="mr-8px flex h-40px w-40px cursor-pointer items-center justify-center rounded border border-solid border-rp-primary-100"
+        className="mr-[8px] flex h-[40px] w-[40px] cursor-pointer items-center justify-center rounded border border-solid border-rp-primary-100"
         onClick={onClickOpenSearchBox}
       >
-        <ChevronDoubleDownIcon className="h-18px w-18px text-rp-primary-100" />
+        <ChevronDoubleDownIcon className="h-[18px] w-[18px] text-rp-primary-100" />
       </div>
       {/* 여기서 데이터를  */}
       <button type="button">SEARCH</button>

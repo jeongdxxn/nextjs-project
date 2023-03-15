@@ -22,43 +22,45 @@ export default function SearchFormContainter() {
   };
 
   return (
-    <div
-      className={`${
-        !openSearchBox ? "h-98px" : "h-162px"
-      } mb-24px rounded-[16px] bg-rp-neutral duration-300 ease-in-out`}
-    >
-      <div className="midContainer px-24px py-16px">
-        <form>
-          <div className="flex-end">
-            <SearchInput />
-            <DatePickers />
-            <BtnGroup onClickOpenSearchBox={onClickOpenSearchBox} />
-          </div>
-          <Transition
-            show={openSearchBox}
-            enter="transition-opacity duration-200"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="transition-opacity"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
-          >
-            <div className="mt-20px">
-              <SearchDropdown
-                label="Status"
-                selected={selectedStatus}
-                optionListData={items.status}
-                onClickList={onClickSelectStatus}
-              />
-              <SearchDropdown
-                label="Service"
-                selected={selectedService}
-                optionListData={items.service}
-                onClickList={onClickSelectService}
-              />
+    <div className="w-full h-full flex justify-center bg-slate-200">
+      <div
+        className={`${
+          !openSearchBox ? "h-[98px]" : "h-[162px]"
+        } mb-[24px] rounded-[16px] bg-white	 duration-300 ease-in-out border-2 w-[950px]`}
+      >
+        <div className="w-full px-[24px] py-[16px] flex">
+          <form>
+            <div className="flex">
+              <SearchInput />
+              <DatePickers />
+              <BtnGroup onClickOpenSearchBox={onClickOpenSearchBox} />
             </div>
-          </Transition>
-        </form>
+            <Transition
+              show={openSearchBox}
+              enter="transition-opacity duration-200"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="transition-opacity"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <div className="mt-[20px] flex items-center">
+                <SearchDropdown
+                  label="Status"
+                  selected={selectedStatus}
+                  optionListData={items.status}
+                  onClickList={onClickSelectStatus}
+                />
+                <SearchDropdown
+                  label="Service"
+                  selected={selectedService}
+                  optionListData={items.service}
+                  onClickList={onClickSelectService}
+                />
+              </div>
+            </Transition>
+          </form>
+        </div>
       </div>
     </div>
   );

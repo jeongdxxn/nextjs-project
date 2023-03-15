@@ -21,18 +21,18 @@ export default function SearchDropdown({
   };
   return (
     <div>
-      <div className="mr-16px flex items-start">
-        <label className="mr-8px pt-10px text-rp-m14 text-rp-neutral-80">
+      <div className="mr-[16px] flex items-start">
+        <label className="mr-[8px] pt-[10px] text-rp-m14 text-rp-neutral-80">
           {label && label}
         </label>
 
         <div
           className={`${
             dropdownOpen && "drop-shadow-xl z-10"
-          } w-200px rounded-[4px] border border-solid border-rp-primary-20 bg-white text-rp-neutral-100`}
+          } w-[200px] rounded-[4px] border border-solid border-rp-primary-20 bg-white text-rp-neutral-100`}
         >
           <div
-            className="flex items-center justify-between px-11px py-8px"
+            className="flex items-center justify-between px-[11px] py-[8px]"
             onClick={() => setDropdownOpen(!dropdownOpen)}
           >
             <span className="flex items-center">
@@ -40,7 +40,7 @@ export default function SearchDropdown({
             </span>
             <span>
               <ChevronDownIcon
-                className="h-20px w-20px text-rp-neutral-40"
+                className="h-[20px] w-[20px] text-rp-neutral-40"
                 aria-hidden="true"
               />
             </span>
@@ -56,7 +56,7 @@ export default function SearchDropdown({
                       onClick={() => toggleDropdown(option.text)}
                       className={`${
                         option.text === selected && "bg-rp-primary-10"
-                      } py-8px px-11px text-rp-neutral-60 hover:bg-rp-primary-10`}
+                      } py-[8px] px-[11px] text-rp-neutral-60 hover:bg-rp-primary-10`}
                     >
                       <div>{option.text}</div>
                     </li>

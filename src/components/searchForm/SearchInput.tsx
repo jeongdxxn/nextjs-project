@@ -17,8 +17,8 @@ export default function SearchInput({ title }: TitleProps) {
   }
 
   return (
-    <div className="mr-16px w-full max-w-[998px]">
-      <div className="mb-4px">
+    <div className="mr-[16px] w-[500px]">
+      <div className="mb-[4px]">
         <div>{title}</div>
       </div>
       <SearchInput.IconInputText
@@ -42,7 +42,7 @@ SearchInput.IconInputText = function ({
 
   if (icon) {
     icon = React.cloneElement(icon, {
-      className: `fill-rp-primary-20 w-20px h-20px absolute ml-10px ${
+      className: `fill-rp-primary-20 w-[20px] h-[20px] absolute ml-[10px] ${
         isFocus && "hidden"
       }`,
     });
@@ -55,8 +55,8 @@ SearchInput.IconInputText = function ({
         type="text"
         name=""
         id=""
-        className={`'disable:bg-rp-neutral-20' rounded-[4px] w-full border border-solid border-rp-primary-20 px-11px py-8px outline-none placeholder:text-rp-n14 placeholder:text-rp-primary-20 focus:placeholder-transparent ${
-          !isFocus && "pl-36px"
+        className={`'disable:bg-rp-neutral-20' rounded-[4px] w-full border border-solid border-rp-primary-20 px-[11px] py-[8px] outline-none placeholder:text-rp-n14 placeholder:text-rp-primary-20 focus:placeholder-transparent ${
+          !isFocus && "pl-[36px]"
         }`}
         placeholder={placeHolder}
         disabled={isDisabled}
