@@ -20,11 +20,11 @@ export default function DatePickers() {
   };
 
   return (
-    <div className="mr-[24px] w-[200px] h-[40px]">
+    <div className="mr-[24px] w-[200px]">
       <div>Start Date</div>
       <div className="mt-[4px]">
         <Datepicker
-          inputClassName="rounded-[4px] pl-[40px] h-[40px] border-2"
+          inputClassName="rounded-[4px] pl-[30px] h-[42px] border-[1px]"
           toggleClassName="left-0"
           primaryColor="teal"
           value={value}

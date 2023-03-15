@@ -22,15 +22,15 @@ export default function SearchFormContainter() {
   };
 
   return (
-    <div className="w-full h-full flex justify-center bg-slate-200">
+    <div className="w-full flex justify-center">
       <div
         className={`${
-          !openSearchBox ? "h-[98px]" : "h-[162px]"
-        } mb-[24px] rounded-[16px] bg-white	 duration-300 ease-in-out border-2 w-[950px]`}
+          !openSearchBox ? "h-[110px]" : "h-[180px]"
+        } rounded-lg bg-white	 duration-300 ease-in-out border-2 w-[950px]`}
       >
         <div className="w-full px-[24px] py-[16px] flex">
           <form>
-            <div className="flex">
+            <div className="flex items-end">
               <SearchInput />
               <DatePickers />
               <BtnGroup onClickOpenSearchBox={onClickOpenSearchBox} />
@@ -44,7 +44,7 @@ export default function SearchFormContainter() {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <div className="mt-[20px] flex items-center">
+              <div className="mt-[20px] flex">
                 <SearchDropdown
                   label="Status"
                   selected={selectedStatus}
