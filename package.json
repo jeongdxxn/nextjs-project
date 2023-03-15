@@ -13,7 +13,8 @@
     "@heroicons/react": "^2.0.16",
     "next": "13.2.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-tailwindcss-datepicker": "^1.5.1"
   },
   "devDependencies": {
     "@types/node": "18.15.0",
