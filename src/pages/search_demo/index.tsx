@@ -1,8 +1,8 @@
-import { SetStateAction, useState } from "react";
+import { useState } from "react";
 import KeywordSearch from "../../components/searchDemo/KeywordSearch";
 import DateSearch from "../../components/searchDemo/DateSearch";
 import OptionSearch from "../../components/searchDemo/OptionSearch";
-import ItemListContainer from "../../components/itemList/itemListContainer";
+import ItemListContainer from "../../components/itemList/ItemListContainer";
 import Button from "../../components/searchDemo/Button";
 export interface ItemsProps {
   keyword: string;
@@ -13,7 +13,7 @@ export interface ItemsProps {
   option: string;
 }
 
-export default function SearchDemoIndex() {
+export default function SearchDemoIdx() {
   const [items, setItems] = useState<ItemsProps>({
     keyword: "",
     date: {

@@ -1,7 +1,7 @@
-import ItemListContainer from "../../components/itemList/itemListContainer";
+import ItemListContainer from "../../components/itemList/ItemListContainer";
 import SearchFormContainter from "../../components/searchForm/SearchFormContainter";
 
-export default function MarketIndex() {
+export default function MarketIdx() {
   return (
     <div className="h-screen w-full bg-slate-200 flex flex-col justify-center items-center">
       <SearchFormContainter />
