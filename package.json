@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.13",
-    "@heroicons/react": "^2.0.16",
+    "@heroicons/react": "^2.0.17",
+    "@lexical/react": "^0.9.1",
+    "@lexical/selection": "^0.9.1",
+    "lexical": "^0.9.1",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
