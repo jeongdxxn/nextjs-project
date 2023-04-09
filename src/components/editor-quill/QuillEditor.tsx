@@ -1,6 +1,5 @@
 import dynamic from "next/dynamic";
-import Quill from "quill";
-import { useRef, useEffect, useState, useMemo } from "react";
+import { useRef, useState } from "react";
 import "react-quill/dist/quill.snow.css";
 
 // 이미지 사이즈 조절을 위한 모듈
